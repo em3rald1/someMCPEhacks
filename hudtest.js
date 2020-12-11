@@ -2,7 +2,7 @@ let GUI = null;
 let lmao = false;
 let text = null;
 
-class GUI_1 {
+class GSLA {
   constructor(color, gravity, ctx, width, height, layout) {
      this.win = new android.widget.PopupWindow();
      this.win.setContentView(layout);
@@ -32,7 +32,7 @@ function newLevel() {
       text = new android.widget.TextView(ctx);
       layout.addView(text);
       let color = new android.graphics.drawable.ColorDrawable(android.graphics.Color.TRANSPARENT);
-      GUI = new GUI_1(color, android.view.Gravity.TOP | android.view.Gravity.RIGHT, ctx, 200, 200, layout);
+      GUI = new GSLA(color, android.view.Gravity.TOP | android.view.Gravity.RIGHT, ctx, 200, 200, layout);
     } catch(err) {
       print("Error: "+err); 
     }
