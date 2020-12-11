@@ -14,7 +14,7 @@ function newLevel() {
           lmao = !lmao;
       }}));
       layout.addView(btn);
-      let txt = new android.widget.TextView();
+      let txt = new android.widget.TextView(ctx);
       txt.setText(lmao?'':"LMAO");
       layout.addView(txt);
       
