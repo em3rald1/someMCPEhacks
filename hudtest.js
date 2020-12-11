@@ -28,7 +28,9 @@ function newLevel() {
 }
 
 function modTick() {
-  TEXT.setText(lmao?"":"LAMO");
+  if(TEXT != null) {
+    TEXT.setText(lmao?"":"LAMO");
+  }
 }
 
 function leaveGame() {
