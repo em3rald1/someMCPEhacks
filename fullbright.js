@@ -1,4 +1,4 @@
-const prefix = ChatColor.BOLD + "[" + ChatColor.PINK + 'Fullbright' + ChatColor.RESET + ChatColor.BOLD + "] " + ChatColor.RESET;
+const prefix = ChatColor.BOLD + "[" + ChatColor.RED + 'Fullbright' + ChatColor.RESET + ChatColor.BOLD + "] " + ChatColor.RESET;
 
 let GUI;
 
