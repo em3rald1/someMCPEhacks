@@ -13,7 +13,7 @@ function newLevel() {
       let btn = new android.widget.Button(ctx);
       btn.setText("FB");
       
-      btn.setOnClickListener( new android.view.View.OnClickListener({ onclick: function() { Entity.addEffect(getPlayerEnt(), MobEffect.nightVision, 0, 60*60*20, false, true); clientMessage(prefix+"Added effect for 1 hour" } }));
+      btn.setOnClickListener( new android.view.View.OnClickListener({ onClick: function(viewArg) { Entity.addEffect(getPlayerEnt(), MobEffect.nightVision, 0, 60*60*20, false, true); clientMessage(prefix+"Added effect for 1 hour"); } }));
       layout.addView(btn);
       GUI = new android.widget.PopupWindow(layout, android.widget.RelativeLayout.LayoutParams.WRAP_CONTENT, android.widget.RelativeLayout.LayoutParams.WRAP_CONTENT);
       GUI.setBackgroundDrawable(new android.graphics.drawable.ColorDrawable(android.graphics.Color.TRANSPARENT));
